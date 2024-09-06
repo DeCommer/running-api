@@ -2,6 +2,8 @@ package com.decommer.running_api;
 
 import java.time.LocalTime;
 import jakarta.persistence.Entity;
+import jakarta.persistence.GeneratedValue;
+import jakarta.persistence.GenerationType;
 // import jakarta.persistence.GeneratedValue;
 // import jakarta.persistence.GenerationType;
 import jakarta.persistence.Id;
@@ -10,7 +12,7 @@ import jakarta.persistence.Id;
 public class RunData {
 
 	@Id
-	// @GeneratedValue(strategy = GenerationType.AUTO)
+	@GeneratedValue(strategy = GenerationType.AUTO)
 	private int id;
 	private String weekday;
 	private String month;
