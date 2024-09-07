@@ -24,7 +24,7 @@ public class RunsController {
 	}
 	
 	@CrossOrigin
-	@GetMapping
+	@GetMapping("")
 	public @ResponseBody Iterable<RunData> getAllRuns() {
 		return runsRepository.findAll();
 	}
@@ -35,9 +35,11 @@ public class RunsController {
 	}
 
 	@ResponseStatus(HttpStatus.CREATED)
-	@PostMapping
-    void addRun(@RequestBody RunData run) {
+	@PostMapping("")
+    public void addRun(@RequestBody RunData run) {
         runsRepository.save(run);
     }
 
 }
+
+//select auto_increment from information_schema.tables where table_schema = "hot_sauces" and table_name = "sauce";
