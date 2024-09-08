@@ -42,4 +42,3 @@ public class RunsController {
 
 }
 
-//select auto_increment from information_schema.tables where table_schema = "hot_sauces" and table_name = "sauce";

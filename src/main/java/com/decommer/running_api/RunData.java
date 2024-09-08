@@ -2,15 +2,12 @@ package com.decommer.running_api;
 
 import java.time.LocalTime;
 import jakarta.persistence.Entity;
-// import jakarta.persistence.GeneratedValue;
-// import jakarta.persistence.GenerationType;
 import jakarta.persistence.Id;
 
 @Entity
 public class RunData {
 
 	@Id
-	// @GeneratedValue(strategy = GenerationType.AUTO)
 	private int id;
 	private String weekday;
 	private String month;
@@ -21,9 +18,7 @@ public class RunData {
 	private LocalTime duration;
 	private int calories;
 	
-	public RunData() {
-		
-	}
+	public RunData() {}
 	
 	public RunData(int id, String weekday, String month, int dom, 
 		String year, String avgPace, double distance,
