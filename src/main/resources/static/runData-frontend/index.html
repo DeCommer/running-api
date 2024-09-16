@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="./main.js" defer></script>
+    <link rel="shortcut icon" href="#">
+    <link href="./main.css" rel="stylesheet">
+    <title>Run Data API</title>
+</head>
+    <body>
+        <header>
+            <nav class="nav-bar">
+              <div class="header-links">
+                <div class="left-header-links">
+                  <a href="https://github.com/DeCommer?tab=repositories" target="_blank">GitHub</a>
+                  <a href="https://www.decommer.com/">Home</a>
+              </div>
+                <!-- <button id="mode-btn" class="theme-btn">🌑</button> -->
+              </div>
+            </nav>
+              <div class="hero">
+                <div class="elem-logo">
+                  <p class="logo-upper-left randNum">00</p>
+                  <h1 class="logo-center">D<span>e</span></h1>
+                  <p class="logo-bottom-center-name">DeCommer</p>
+                  <p class="logo-bottom-center"><span class="randNum">00</span>.<span class="randNum">00</span></p>
+                </div>
+                <div class="title-container">
+                  <h2>Joseph DeCommer</h2>
+                  <p class="description-text">Remote API Frontend</p>
+                </div>
+              </div>
+            </header>
+            <div class="mobile-title-container app-hidden">
+              <div class="sm-elem-logo">
+                  <p class="sm-logo-upper-left randNum">00</p>
+                  <h1 class="sm-logo-center">D<span class="sm-logo-sm-txt">e</span></h1>
+                  <p class="sm-logo-bottom-center-name">DeCommer</p>
+                  <p class="sm-logo-bottom-center"><span class="randNum">00</span>.<span class="randNum">00</span></p>
+              </div>
+              <div>
+                  <h2 class="title">DeCommer.com</h2>
+                  <p class="description-text">Running Data pagination</p>
+              </div>
+          </div>
+
+        <div class="main-container">
+            <div class="metrics">
+              <p class="description">My running data from <span>2010 - 2024</span></p>
+           <div class="totals">
+              <p class="total-runs"></p>
+              <p class="total-distance"></p>
+              <p class="total-cal"></p>
+            </div>
+          </div>
+
+            <div class="run-data-container" id="run-data-container">API OFFLINE</div>
+            
+            <div class="page-num-container">
+                <div class="pageNumbers" id="pagination"></div>
+            </div>
+        </div>
+        <footer>
+            <p>Joseph DeCommer</p><p class="year"></p> <p> Hosted by GitHub</p>
+        </footer>
+        <p id="countdown" class="countdown">Coundown to Nike Volt Level: <span></span></p></br>
+    </body>
+</html>
